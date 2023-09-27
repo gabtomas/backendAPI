@@ -2,10 +2,12 @@
     "name": "backendapi",
     "version": "1.0.0",
     "description": "",
-    "type": "module",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon app.ts"
+        "dev": "nodemon ./src/app.ts",
+        "build": "tsc",
+        "start": "node ./dist/src/app.js",
+        "vercel-build": ""
     },
     "keywords": [],
     "author": "",
